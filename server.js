@@ -49,6 +49,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle:'My Projects'
+  });
+})
+
 app.get('/bad', (req, res) => {
   res.send('<h1>Oh No! It looks like you got lost exploring the mysteries of the internet!</h1>\n<div><h2>Error 404</h2></div><div>The page you request does not exist</div>')
 });
